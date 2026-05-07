@@ -8,11 +8,8 @@ A company wants to:
 - Allow management access (RDP) only from the Management network
 
  🏗️ Architecture
- → [main diagram](./Architecture/main diagram.png)
 
- [](.//main diagram.png)
- 
- <img width="410" height="322" alt="image" src="https://github.com/user-attachments/assets/57dff98c-792f-48e6-9425-58f694728123" />
+![Azure Secure Networking Lab Architecture](./architecture/main diagram.png)
 
 🛠️ What You Will Implement
 - Resource Group
