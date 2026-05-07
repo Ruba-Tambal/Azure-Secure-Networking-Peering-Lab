@@ -9,7 +9,7 @@ A company wants to:
 
  🏗️ Architecture
 
-![Azure Secure Networking Lab Architecture](./architecture/diagram.png)
+![Azure Secure Networking Lab Architecture](./Architecture/diagram.png)
 
 🛠️ What You Will Implement
 - Resource Group
