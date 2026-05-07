@@ -10,11 +10,6 @@ A company wants to:
  🏗️ Architecture
  <img width="410" height="322" alt="image" src="https://github.com/user-attachments/assets/57dff98c-792f-48e6-9425-58f694728123" />
 
-**Production VNet**: `10.0.0.0/16` (subnet-app)
-**Management VNet**: `10.1.0.0/16` (subnet-management)
-- Bidirectional VNet Peering
-- NSG + ASG for security
-
 🛠️ What You Will Implement
 - Resource Group
 - Two VNets + Subnets
