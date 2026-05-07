@@ -8,7 +8,7 @@ A company wants to:
 - Allow management access (RDP) only from the Management network
 
  🏗️ Architecture
- → [main diagram](./Architecture/)
+ → [main diagram](./Architecture/main diagram.png)
 
  [](.//main diagram.png)
  
