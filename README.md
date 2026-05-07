@@ -1,28 +1,42 @@
- Azure Secure Networking & Peering Lab
+*Advanced Real-World Azure Networking Lab** simulating a company environment with Production and Management networks
 
  🎯 Scenario
-Designed a secure multi-network Azure environment with controlled communication and centralized management access.
+A company wants to:
+- Separate **Production** and **Management** environments
+- Allow secure communication using **VNet Peering**
+- Protect servers using **NSG + ASG**
+- Allow management access (RDP) only from the Management network
 
  🏗️ Architecture
-- Production VNet
-- Management VNet
-- VNet Peering
-- Subnet segmentation
-- NSG & ASG
-- Virtual Machines
+ Management VNet (10.1.0.0/16)
+│
+Bidirectional Peering
+│
+Production VNet (10.0.0.0/16)
+│
+subnet-app (10.0.1.0/24)
+├── vm-web   → asg-web
+└── vm-app   → asg-app
 
- 🔐 Security Design
-- Restricted RDP access from management network only
-- Controlled application communication using ASG
-- Segmented production and management environments
+🛠️ What You Will Implement
+- Resource Group
+- Two VNets + Subnets
+- Virtual Machines (Web, App, Management)
+- Application Security Groups (ASG)
+- Network Security Group (NSG) with custom rules
+- VNet Peering (Bidirectional)
 
- 📊 Result
-- Secure multi-tier architecture
-- Controlled administrative access
-- Improved network scalability and security
+ 📋 Lab Steps
+→ [Full Step-by-Step Guide](./Step-by-Step-Guide.md)
 
-💡 Skills
-- Azure Networking
-- VNet Peering
-- NSG & ASG
-- Cloud Security
+ 🧪 Testing
+→ [Verification & Testing](./Verification.md)
+
+ 📁 Repository Structure
+- **screenshots/** → All lab screenshots (organized by component)
+- **Step-by-Step-Guide.md** → Detailed walkthrough
+- **Verification.md** → How to test the lab
+
+🧹 Cleanup
+Delete the resource group `rg-network-project` to avoid unnecessary costs.
+
