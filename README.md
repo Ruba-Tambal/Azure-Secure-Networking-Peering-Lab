@@ -1,4 +1,4 @@
-*Advanced Real-World Azure Networking Lab** simulating a company environment with Production and Management networks
+Advanced Real-World Azure Networking Lab** simulating a company environment with Production and Management networks
 
  🎯 Scenario
 A company wants to:
@@ -8,15 +8,10 @@ A company wants to:
 - Allow management access (RDP) only from the Management network
 
  🏗️ Architecture
- Management VNet (10.1.0.0/16)
-│
-Bidirectional Peering
-│
-Production VNet (10.0.0.0/16)
-│
-subnet-app (10.0.1.0/24)
-├── vm-web   → asg-web
-└── vm-app   → asg-app
+**Production VNet**: `10.0.0.0/16` (subnet-app)
+**Management VNet**: `10.1.0.0/16` (subnet-management)
+- Bidirectional VNet Peering
+- NSG + ASG for security
 
 🛠️ What You Will Implement
 - Resource Group
